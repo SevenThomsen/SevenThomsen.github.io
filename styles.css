@@ -138,6 +138,10 @@ ul {
 }
 
 /* Links */
+.print-only {
+  display: none !important;
+}
+
 .link-item {
   position: relative;
   display: block;

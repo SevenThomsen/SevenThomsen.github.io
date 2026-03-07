@@ -17,6 +17,7 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="print.css" media="print" />
     <script>
       const savedTheme = localStorage.getItem("theme");
       if (savedTheme === "light") {
@@ -85,12 +86,18 @@
               rel="noopener noreferrer"
               class="link-item"
             >
-              <span class="link-content">
+              <span class="link-content linkedin_button">
                 <i class="ri-linkedin-box-fill"></i>
                 LinkedIn
               </span>
               <i class="ri-arrow-right-up-line arrow"></i>
             </a>
+            <div class="link-item print-only">
+              <span class="link-content">
+                <i class="ri-link"></i>
+                resume.szn.plus
+              </span>
+            </div>
           </nav>
         </aside>
 
