@@ -11,8 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600&family=Reddit+Sans:wght@600&family=Geist:wght@400&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -21,6 +31,13 @@
           <h1>Seven Thomsen,</h1>
           <p>IT Specialist & Designer</p>
         </div>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          <i id="theme-icon" class="ri-sun-line"></i>
+        </button>
       </header>
 
       <main class="main-content">
@@ -39,13 +56,28 @@
           </div>
 
           <nav class="links">
+            <a
+              href="seven_thomsen_resume.pdf"
+              download="Seven_Thomsen_Resume.pdf"
+              class="link-item"
+            >
+              <span class="link-content">
+                <i class="ri-arrow-down-line"></i>
+                Download PDF
+              </span>
+              <i class="ri-arrow-right-up-line arrow"></i>
+            </a>
             <a href="mailto:7@szn.plus" class="link-item">
-              <span class="link-content">7@szn.plus</span>
-              <span class="arrow">↗</span>
+              <span class="link-content"
+                ><i class="ri-mail-line"></i> 7@szn.plus</span
+              >
+              <i class="ri-arrow-right-up-line arrow"></i>
             </a>
             <a href="tel:+14176993472" class="link-item">
-              <span class="link-content">+1 417-699-3472</span>
-              <span class="arrow">↗</span>
+              <span class="link-content"
+                ><i class="ri-phone-line"></i> +1 417-699-3472</span
+              >
+              <i class="ri-arrow-right-up-line arrow"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/seven-thomsen-07161b217/"
@@ -54,20 +86,10 @@
               class="link-item"
             >
               <span class="link-content">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                  />
-                </svg>
+                <i class="ri-linkedin-box-fill"></i>
                 LinkedIn
               </span>
-              <span class="arrow">↗</span>
+              <i class="ri-arrow-right-up-line arrow"></i>
             </a>
           </nav>
         </aside>
@@ -94,13 +116,15 @@
                 <div class="job-description">
                   <ul>
                     <li>
-                      Served as the initial contact for reporting technical
-                      issues for several different law firm's systems.
+                      Facilitated high-volume technical support as the primary
+                      point of contact for multiple legal organizations,
+                      ensuring rapid response times and adherence to strict
+                      SLAs.
                     </li>
                     <li>
-                      Diagnosed various technical issues while documenting
-                      information and performing research to best find the
-                      solution to the issue at hand.
+                      Diagnosed and resolved complex software and hardware
+                      issues within specialized legal environments, documenting
+                      solutions to streamline future troubleshooting.
                     </li>
                   </ul>
                 </div>
@@ -111,23 +135,21 @@
                   <h3>Event Manager</h3>
                   <div class="job-details">
                     <p>SZN Productions</p>
-                    <p>August 2017 - Current</p>
+                    <p>August 2017 - Present</p>
                     <p>Across the United States</p>
                   </div>
                 </div>
                 <div class="job-description">
                   <ul>
                     <li>
-                      Hosted over 350 events, overseeing all aspects from
-                      planning to live production.
+                      Engineered and executed 350+ large-scale events,
+                      overseeing end-to-end technical production, network
+                      stability, and live broadcast infrastructure.
                     </li>
                     <li>
-                      Organized, promoted, and executed events with a focus on
-                      high-quality production.
-                    </li>
-                    <li>
-                      Developed graphics, overlays, and livestreams to enhance
-                      engagement and event professionalism.
+                      Optimized live-stream workflows by developing custom
+                      graphic overlays and automated production tools, resulting
+                      in a more professional and engaging viewer experience.
                     </li>
                   </ul>
                 </div>
@@ -138,7 +160,7 @@
                   <h3>Graphic Designer</h3>
                   <div class="job-details">
                     <p>Freelance</p>
-                    <p>September 2018 - Current</p>
+                    <p>September 2018 - Present</p>
                     <p>Remote</p>
                   </div>
                 </div>
@@ -169,8 +191,9 @@
                 <div class="job-description">
                   <ul>
                     <li>
-                      Managed the Game Center, handling payments, events, and
-                      maintaining a welcoming atmosphere.
+                      Maintained high uptime for the University Game Center's
+                      hardware and networking infrastructure, supporting daily
+                      operations for a high-traffic student hub.
                     </li>
                     <li>
                       Provided troubleshooting support for computers and
@@ -247,7 +270,7 @@
           </section>
 
           <section class="certifications section-block">
-            <h2 class="section-title">Certifications:</h2>
+            <h2 class="section-title">Certifications</h2>
 
             <div class="certs-list">
               <div class="cert-item">
@@ -258,7 +281,7 @@
                   class="cert-link"
                   >CompTIA Network+ ↗</a
                 >
-                <p class="cert-date">Issued May 2019 · Expires May 2022</p>
+                <p class="cert-date">May 2019 - May 2022</p>
               </div>
 
               <div class="cert-item">
@@ -291,7 +314,7 @@
                   >
                   Certifications
                 </p>
-                <p class="cert-date">Issued Feb 2026</p>
+                <p class="cert-date">Feb 2026</p>
               </div>
             </div>
           </section>
@@ -300,5 +323,27 @@
         </div>
       </main>
     </div>
+
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+
+      if (document.documentElement.getAttribute("data-theme") === "light") {
+        themeIcon.className = "ri-moon-line";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        let theme = document.documentElement.getAttribute("data-theme");
+        if (theme === "light") {
+          document.documentElement.removeAttribute("data-theme");
+          localStorage.setItem("theme", "dark");
+          themeIcon.className = "ri-sun-line";
+        } else {
+          document.documentElement.setAttribute("data-theme", "light");
+          localStorage.setItem("theme", "light");
+          themeIcon.className = "ri-moon-line";
+        }
+      });
+    </script>
   </body>
 </html>
