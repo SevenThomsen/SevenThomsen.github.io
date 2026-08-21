@@ -1,6 +1,6 @@
 /* 📄 Single-Page PDF Print Optimization */
 @page {
-  margin: 0.4in;
+  margin: 0.35in;
   size: letter;
 }
 
@@ -104,30 +104,30 @@ body {
 }
 
 .section-block {
-  padding: 10px 0 !important;
-  gap: 10px !important;
+  padding: 8px 0 !important;
+  gap: 8px !important;
 }
 
 .experience.section-block {
-  padding-top: 15px !important;
+  padding-top: 5px !important;
   margin-top: 0 !important;
 }
 
 .section-title {
   font-size: 14px !important;
-  margin-bottom: 5px !important;
+  margin-bottom: 4px !important;
 }
 
 .jobs-list {
-  gap: 12px !important;
+  gap: 10px !important;
 }
 
 /* Rearrange Job entries horizontally */
 .job {
   display: flex !important;
   flex-direction: column !important;
-  gap: 4px !important;
-  padding-top: 8px !important;
+  gap: 3px !important;
+  padding-top: 6px !important;
 }
 
 .job:first-of-type {
