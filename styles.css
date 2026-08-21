@@ -108,7 +108,7 @@ ul {
 /* Sidebar */
 .sidebar {
   flex: 1 0 0;
-  max-width: 368px;
+  max-width: 275px;
   position: sticky;
   top: 0;
   padding-right: 10px;
@@ -116,7 +116,7 @@ ul {
 
 .about-card {
   position: relative;
-  padding: 30px 40px 40px 6px;
+  padding: 30px 15px 40px 6px;
   border-top: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
