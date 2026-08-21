@@ -230,7 +230,19 @@ ul {
   letter-spacing: -0.16px;
 }
 
-.job-details {
+.job-header-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.job-date {
+  color: var(--text-secondary);
+  font-size: 15px;
+  letter-spacing: -0.15px;
+}
+
+.job-sub-row {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -239,8 +251,25 @@ ul {
   letter-spacing: -0.15px;
 }
 
-.job-details a {
+.job-company-location {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.job-company-location a {
   text-decoration: underline;
+}
+
+.job-dot {
+  color: var(--text-secondary);
+  font-size: 10px;
+}
+
+.job-extra-meta {
+  color: var(--text-secondary);
+  font-size: 14px;
 }
 
 .job-description {
